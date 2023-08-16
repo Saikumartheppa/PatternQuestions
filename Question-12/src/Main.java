@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        //       Given n = 5.You have to print Output as given below.
+//               Given n = 5.You have to print Output as given below.
 //                                      *
 //                                   *  !  *
 //                                *  !  *  !  *
@@ -14,8 +14,12 @@ public class Main {
             for(int j = 0; j < space; j++){
                 System.out.printf("\t");
             }
-            for(int j = 0; j <= i; j++){
-                System.out.printf("*\t\t");
+            for(int j = 0; j < n; j++){
+                if(i + j == n - 1)
+                    System.out.printf("*\t");
+            }
+            for(int j = 0; j < i; j++){
+                System.out.printf("!\t*\t");
             }
             space--;
             System.out.println();
