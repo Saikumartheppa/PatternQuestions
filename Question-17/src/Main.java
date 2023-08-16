@@ -46,7 +46,7 @@ public class Main {
 //        }
 
 //        _______________________________________________________
-//                Solution without using functions
+//                Solution with using functions
 //        _______________________________________________________
 
         int n = 7,space = 1;
