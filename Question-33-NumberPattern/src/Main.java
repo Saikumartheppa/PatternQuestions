@@ -20,18 +20,12 @@ public class Main {
                 System.out.printf("\t");
             }
             // loop for printing numbers which are in front of 0's column
-            for(int j = n - i;i > 1 && j < n - 1; j++){
-                System.out.print(j + 1);
+            for(int j = n - i + 1;j < n; j++){
+                System.out.print(j);
                 System.out.printf("\t");
             }
-//            for printing zero  instead of using a new for loop
+            // for printing zero  instead of using a new for loop
             System.out.printf("0\t");
-//             for printing zero
-//            for(int j = n; j >= 1; j--){
-//                if(j == 1){
-//                    System.out.printf("0\t");
-//                }
-//            }
             // loop for printing numbers which are after 0's column
             for(int j = n - 1; j > n - i; j--){
                 System.out.print(j);
@@ -39,5 +33,26 @@ public class Main {
             }
             System.out.println();
         }
+//
+//        ----------------------------------------------------------------------
+//        starting ith loop from 10 to 1
+//        ----------------------------------------------------------------------
+//          int n = 10;
+//          for(int i = n; i >= 1; i--){
+//
+//             for(int s = 1; s< i; s++){
+//                 System.out.print("\t");
+//             }
+//             for(int j = i; j < n; j++){
+//                 System.out.print(j);
+//                 System.out.print("\t");
+//             }
+//              System.out.print("0\t");
+//              for(int j = n - 1; j >= i; j--){
+//                  System.out.print(j);
+//                  System.out.print("\t");
+//              }
+//              System.out.println();
+//          }
     }
 }
